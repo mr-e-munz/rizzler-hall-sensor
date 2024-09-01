@@ -1,0 +1,29 @@
+manifest:
+  self:
+    path: firmware
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: zephyr-v3.5.0
+      import:
+        name-allowlist:
+          - mbedtls
+          - cmsis
+          - hal_nordic
+          - littlefs
+          - mcuboot
+          - mcumgr
+          - net-tools
+          - segger
+          - tinycrypt
+          - tinycbor
+          - mipi-sys-t
+          - nrf_hw_models
+          - TraceRecorderSource
+          - edtt
+

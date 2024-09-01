@@ -1,0 +1,30 @@
+# Copyright (c) 2024 Mr E Munz
+# All rights reserved
+
+CONFIG_SOC_SERIES_NRF52X=y
+CONFIG_SOC_NRF52810_QFAA=y
+CONFIG_BOARD_EMUNZ_RHS810=y
+
+# Enable MPU
+CONFIG_ARM_MPU=y
+
+# Enable hardware stack protection
+CONFIG_HW_STACK_PROTECTION=y
+
+# enable GPIO
+CONFIG_GPIO=y
+
+# Enable UARTE
+CONFIG_SERIAL=y
+
+# enable console
+CONFIG_CONSOLE=y
+CONFIG_UART_CONSOLE=y
+
+# Bluetooth not enabled by default on nRF52810 due to RAM limitations when
+# running the default set of kernel tests.
+# Enable this on your prj.conf to include Bluetooth support
+
+# additional board options
+CONFIG_GPIO_AS_PINRESET=n
+CONFIG_PINCTRL=y

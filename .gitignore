@@ -1,0 +1,25 @@
+# editors
+.vscode
+*.swp
+*~
+.dir-locals.el
+
+# python
+.venv
+
+# build
+build*/
+.cache
+twister-out*
+
+# signing keys
+*.pem
+
+# local exports
+local-export*
+
+#python virtual env
+.venv*
+
+# programming binaries and script output
+tools/manu/out

@@ -1,0 +1,15 @@
+identifier: emunz_rhs810
+name: EMUNZ-RIZZLER_HALL_SENSOR-nRF52810
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 24
+flash: 192
+supported:
+  - counter
+  - pwm
+  - netif:openthread
+  - gpio

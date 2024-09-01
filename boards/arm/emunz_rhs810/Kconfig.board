@@ -1,0 +1,8 @@
+# Rizzler Hall Sensor board configuration
+
+# Copyright (c) 2024 Mr E Munz
+# All rights reserved
+
+config BOARD_EMUNZ_RHS810
+	bool "E Money Rizzler Hall Sensor Board (nRF52810)"
+	depends on SOC_NRF52810_QFAA

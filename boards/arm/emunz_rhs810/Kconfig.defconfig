@@ -1,0 +1,11 @@
+# Rizzler Hall Sensor board configuration
+
+# Copyright (c) 2024 Mr E Munz
+# All rights reserved
+
+if BOARD_EMUNZ_RHS810
+
+config BOARD
+	default "emunz_rhs810"
+
+endif # BOARD_EMUNZ_RHS810
